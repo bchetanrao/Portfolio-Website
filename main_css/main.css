@@ -25,7 +25,7 @@ body {
 
 .blob1 {
   position: absolute;
-  top: -25%;
+  top: -30%;
   left: -15%;
   z-index: -1;
 }
@@ -37,7 +37,7 @@ body {
 
 .blob2 {
   position: absolute;
-  bottom: -25%;
+  bottom: -35%;
   right: 20%;
   z-index: 0;
 }
@@ -50,7 +50,7 @@ body {
 .blob3 {
   position: absolute;
   top: 170%;
-  left: -15%;
+  left: -10%;
   z-index: 0;
 }
 
@@ -61,7 +61,7 @@ body {
 
 .blob4 {
   position: absolute;
-  bottom: -300%;
+  bottom: -290%;
   right: 20%;
   z-index: 0;
 }
@@ -236,21 +236,6 @@ footer span {
   background-color: #242424;
   color: #a8a8a8;
   padding: 0.7rem 0;
-}
-
-.blob1,
-.blob2,
-.blob3,
-.blob4 {
-  -webkit-transform-origin: 95% 50%;
-          transform-origin: 95% 50%;
-  -webkit-animation: rotate 7s infinite linear;
-          animation: rotate 7s infinite linear;
-}
-
-.blob2 {
-  -webkit-animation: rotate 10s infinite linear;
-          animation: rotate 10s infinite linear;
 }
 
 @-webkit-keyframes rotate {

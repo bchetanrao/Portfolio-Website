@@ -256,13 +256,19 @@ footer {
 		columns: 1;
 	}
 	footer {
+		padding: 0;
 		.footer {
+			padding: 1rem 0;
 			h5 {
+				margin: 1rem 0;
+				padding: 0;
 				font-size: 1rem;
 			}
 		}
 		.icons {
 			width: 50%;
+			margin: 1rem 0;
+			padding: 0;
 			i {
 				font-size: 2rem;
 			}

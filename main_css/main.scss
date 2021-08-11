@@ -10,6 +10,9 @@ $regular: 400;
 	margin: 0;
 	padding: 0%;
 }
+html {
+	overflow-x: hidden;
+}
 body {
 	overflow-x: hidden;
 	font-family: "Roboto", sans-serif;
@@ -181,6 +184,27 @@ footer {
 		background-color: rgb(36, 36, 36);
 		color: rgb(168, 168, 168);
 		padding: 0.7rem 0;
+	}
+}
+.blob1,
+.blob2,
+.blob3,
+.blob4 {
+	transform-origin: 95% 50%;
+	animation: rotate 7s infinite linear;
+}
+.blob2 {
+	animation: rotate 10s infinite linear;
+}
+@keyframes rotate {
+	0% {
+		transform: scale(1) rotate(0deg);
+	}
+	50% {
+		transform: scale(0.8) rotate(180deg);
+	}
+	100% {
+		transform: scale(1) rotate((360deg));
 	}
 }
 @media all and (max-width: 480px) {

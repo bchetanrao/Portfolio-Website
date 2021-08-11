@@ -6,6 +6,10 @@
   padding: 0%;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   overflow-x: hidden;
   font-family: "Roboto", sans-serif;
@@ -232,6 +236,51 @@ footer span {
   background-color: #242424;
   color: #a8a8a8;
   padding: 0.7rem 0;
+}
+
+.blob1,
+.blob2,
+.blob3,
+.blob4 {
+  -webkit-transform-origin: 95% 50%;
+          transform-origin: 95% 50%;
+  -webkit-animation: rotate 7s infinite linear;
+          animation: rotate 7s infinite linear;
+}
+
+.blob2 {
+  -webkit-animation: rotate 10s infinite linear;
+          animation: rotate 10s infinite linear;
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: scale(1) rotate(0deg);
+            transform: scale(1) rotate(0deg);
+  }
+  50% {
+    -webkit-transform: scale(0.8) rotate(180deg);
+            transform: scale(0.8) rotate(180deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotate(360deg);
+            transform: scale(1) rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: scale(1) rotate(0deg);
+            transform: scale(1) rotate(0deg);
+  }
+  50% {
+    -webkit-transform: scale(0.8) rotate(180deg);
+            transform: scale(0.8) rotate(180deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotate(360deg);
+            transform: scale(1) rotate(360deg);
+  }
 }
 
 @media all and (max-width: 480px) {

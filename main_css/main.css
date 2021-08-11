@@ -306,9 +306,6 @@ footer span {
     -webkit-columns: 1;
             columns: 1;
   }
-  footer {
-    z-index: -1;
-  }
   footer .footer h5 {
     font-size: 1rem;
   }

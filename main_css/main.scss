@@ -227,29 +227,21 @@ footer {
 	.blob3,
 	.blob4 {
 		svg {
-			width: 150%;
-			height: auto;
-		}
-	}
-	.blob1 {
-		top: -15%;
-		left: -40%;
-		svg {
 			width: 200%;
 			height: auto;
 		}
 	}
+	.blob1 {
+		top: -10%;
+		left: -40%;
+	}
 	.blob2 {
-		bottom: -40%;
+		bottom: -50%;
 		right: -7%;
 	}
 	.blob3 {
 		top: 185%;
 		left: -50%;
-		svg {
-			width: 200%;
-			height: auto;
-		}
 	}
 	.blob4 {
 		display: none;

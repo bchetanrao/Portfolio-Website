@@ -283,36 +283,6 @@ footer span {
   }
 }
 
-@-webkit-keyframes rotate {
-  0% {
-    -webkit-transform: scale(1) rotate(0deg);
-            transform: scale(1) rotate(0deg);
-  }
-  50% {
-    -webkit-transform: scale(0.8) rotate(180deg);
-            transform: scale(0.8) rotate(180deg);
-  }
-  100% {
-    -webkit-transform: scale(1) rotate(360deg);
-            transform: scale(1) rotate(360deg);
-  }
-}
-
-@keyframes rotate {
-  0% {
-    -webkit-transform: scale(1) rotate(0deg);
-            transform: scale(1) rotate(0deg);
-  }
-  50% {
-    -webkit-transform: scale(0.8) rotate(180deg);
-            transform: scale(0.8) rotate(180deg);
-  }
-  100% {
-    -webkit-transform: scale(1) rotate(360deg);
-            transform: scale(1) rotate(360deg);
-  }
-}
-
 @media all and (max-width: 480px) {
   .blob1 img,
   .blob2 img,

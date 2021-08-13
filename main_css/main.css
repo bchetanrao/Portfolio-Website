@@ -284,10 +284,10 @@ footer span {
 }
 
 @media all and (max-width: 480px) {
-  .blob1 img,
-  .blob2 img,
-  .blob3 img,
-  .blob4 img {
+  .blob1 svg,
+  .blob2 svg,
+  .blob3 svg,
+  .blob4 svg {
     width: 150%;
     height: auto;
   }
@@ -295,8 +295,8 @@ footer span {
     top: -30%;
     left: -70%;
   }
-  .blob1 img {
-    width: 250%;
+  .blob1 svg {
+    width: 200%;
     height: auto;
   }
   .blob2 {
@@ -309,7 +309,7 @@ footer span {
     top: 190%;
     left: -50%;
   }
-  .blob3 img {
+  .blob3 svg {
     width: 200%;
     height: auto;
   }

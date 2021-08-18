@@ -302,6 +302,11 @@ footer {
 			padding: 0;
 		}
 	}
+	.img-wrapper {
+		width: 100%;
+		height: auto;
+		background-color: $highlight-color;
+	}
 	footer {
 		padding: 0;
 		.footer {

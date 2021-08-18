@@ -65,10 +65,10 @@ html {
 }
 
 body {
-  background-color: #fff;
+  background-color: #fdfffc;
   overflow-x: hidden;
   font-family: "Roboto", sans-serif;
-  color: #333;
+  color: #011627;
 }
 
 ::-webkit-scrollbar {
@@ -76,7 +76,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #ff0066;
+  background-color: #ff9f1c;
 }
 
 .blob1,
@@ -84,6 +84,13 @@ body {
 .blob3,
 .blob4 {
   pointer-events: none;
+}
+
+.blob1 svg,
+.blob2 svg,
+.blob3 svg,
+.blob4 svg {
+  fill: #ff9f1c;
 }
 
 .blob1 {
@@ -158,7 +165,7 @@ p {
 p a {
   cursor: pointer;
   text-decoration: none;
-  color: #ff0066;
+  color: #ff9f1c;
 }
 
 h5 {
@@ -190,8 +197,8 @@ section {
 section:nth-of-type(2) {
   margin: 0;
   padding: 0 15%;
-  color: #fff;
-  background-color: #333;
+  color: #fdfffc;
+  background-color: #011627;
 }
 
 section:nth-of-type(3) {
@@ -231,8 +238,8 @@ footer {
   height: auto;
   bottom: 0;
   padding-top: 5rem;
-  background-color: #333;
-  color: #fff;
+  background-color: #011627;
+  color: #fdfffc;
 }
 
 footer .footer {
@@ -262,16 +269,16 @@ footer .icons {
 }
 
 footer a {
-  color: #ff0066;
+  color: #ff9f1c;
 }
 
 footer a i {
-  color: #fff;
+  color: #fdfffc;
   font-size: 2.8rem;
 }
 
 footer a i:hover {
-  color: #ff0066;
+  color: #ff9f1c;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }

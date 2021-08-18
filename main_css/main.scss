@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
-$base-color: #fff;
-$dark-color: #333;
-$highlight-color: #ff0066;
+$base-color: #fdfffc;
+$dark-color: #011627;
+$highlight-color: #ff9f1c;
 $black: 900;
 $bold: 700;
 $regular: 400;
@@ -71,6 +71,9 @@ body {
 .blob3,
 .blob4 {
 	pointer-events: none;
+	svg {
+		fill: $highlight-color;
+	}
 }
 .blob1 {
 	position: absolute;

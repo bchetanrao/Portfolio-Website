@@ -6,6 +6,58 @@
   padding: 0%;
 }
 
+.jk {
+  background-color: #34d4d4;
+}
+
+.distort {
+  background-color: #3d2aa8;
+}
+
+.original {
+  background-color: #e35300;
+}
+
+.psy {
+  background-color: #cf00b4;
+}
+
+.singularity {
+  background-color: #bbbfbf;
+}
+
+.eunoia {
+  background-color: #a60039;
+}
+
+.breathe {
+  background-color: #bbbfbf;
+}
+
+.phil {
+  background-color: #009982;
+}
+
+.aniquo {
+  background-color: #fff;
+}
+
+.tnt {
+  background-color: #e1ddd5;
+}
+
+.gifyre {
+  background-color: #f7f7f7;
+}
+
+.swe {
+  background-color: #dd0034;
+}
+
+img {
+  display: block;
+}
+
 html {
   max-width: 100%;
   scroll-behavior: smooth;
@@ -166,7 +218,11 @@ section:nth-of-type(3) {
 .grid_container_projects img {
   width: 100%;
   height: auto;
-  margin-bottom: -0.5rem;
+}
+
+.img-wrapper {
+  width: 100%;
+  height: auto;
 }
 
 footer {
@@ -352,13 +408,8 @@ footer span {
   }
   .grid_container img,
   .grid_container_projects img {
-    margin-bottom: -1%;
+    margin: 0;
     padding: 0;
-  }
-  .img-wrapper {
-    width: 100%;
-    height: auto;
-    background-color: #ff0066;
   }
   footer {
     padding: 0;

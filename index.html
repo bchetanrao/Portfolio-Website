@@ -263,5 +263,58 @@
 			</div>
 			<span>© Copyright B Chetan Rao 2021</span>
 		</footer>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
+
+		<script>
+			gsap.registerPlugin(ScrollTrigger);
+
+			let x = gsap.timeline({
+				scrollTrigger: {
+					trigger: ".intro",
+					start: "center bottom",
+				},
+			});
+			x.from(".intro h2", { x: -200, opacity: 0, duration: 1 })
+				.from(".intro h1", { x: -200, opacity: 0, duration: 1 }, "-=0.5")
+				.from(".intro h5", { x: -200, opacity: 0, duration: 1 }, "-=0.5");
+			let tl = gsap.timeline({
+				scrollTrigger: {
+					trigger: ".about",
+					start: "center bottom",
+				},
+			});
+
+			tl.from(".about h2", { x: -200, opacity: 0, duration: 1.5 }).from(
+				".about p",
+				{
+					y: 200,
+					opacity: 0,
+					duration: 1,
+				},
+				"-=1"
+			);
+
+			let tl1 = gsap.timeline({
+				scrollTrigger: {
+					trigger: ".work",
+					start: "center bottom",
+				},
+			});
+
+			tl1
+				.from(".work h2", { x: -200, opacity: 0, duration: 1.5 })
+				.from(".work h6", { x: 200, opacity: 0, duration: 1.5 }, "-=1");
+
+			let tl2 = gsap.timeline({
+				scrollTrigger: {
+					trigger: ".img-wrapper",
+					start: "center bottom",
+				},
+			});
+
+			tl2.from(".img-wrapper", { y: 300, opacity: 0, duration: 1.5 });
+		</script>
 	</body>
 </html>

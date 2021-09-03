@@ -17,7 +17,7 @@ $regular: 400;
 .circle,
 .cursor {
 	position: fixed;
-	background: #34d4d4;
+	background: #eee;
 	border-radius: 50%;
 	transform: translate(-50%, -50%);
 	pointer-events: none;
@@ -340,8 +340,8 @@ footer {
 }
 
 @media all and (max-width: 480px) {
-	.cursor2,
-	.cursor {
+	.cursor,
+	.circle {
 		display: none;
 	}
 	html,

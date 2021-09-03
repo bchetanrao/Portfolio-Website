@@ -21,6 +21,9 @@
 		<title>B Chetan Rao</title>
 	</head>
 	<body>
+		<!-- custom cursor -->
+		<div class="circle"></div>
+		<div class="cursor"></div>
 		<!-- blobs -->
 		<div class="blob1">
 			<svg
@@ -69,10 +72,13 @@
 						interested in web design, graphic design and frontend development
 						and am well versed with the professional tools used for these. I am
 						always interested in taking up a challenge, reach out to me at
-						<a href="mailto:chetanraocr7@gmail.com"> chetanraocr7@gmail.com</a>
+						<a class="link" href="mailto:chetanraocr7@gmail.com">
+							chetanraocr7@gmail.com</a
+						>
 						to connect. <br />
 						View my
 						<a
+							class="link"
 							href="/resume/resume.html"
 							target="_blank"
 							rel="noopener noreferrer"
@@ -167,6 +173,7 @@
 				<h6>projects</h6>
 				<div class="grid_container_projects">
 					<a
+						class="link"
 						href="https://aniquo.netlify.app/"
 						target="_blank"
 						rel="noopener noreferrer"
@@ -180,6 +187,7 @@
 						</div>
 					</a>
 					<a
+						class="link"
 						href="https://github.com/bchetanrao/Tminus0-Tours-N-Travel"
 						target="_blank"
 						rel="noopener noreferrer"
@@ -193,6 +201,7 @@
 						</div>
 					</a>
 					<a
+						class="link"
 						href="https://gifyre.netlify.app/"
 						target="_blank"
 						rel="noopener noreferrer"
@@ -206,6 +215,7 @@
 						</div>
 					</a>
 					<a
+						class="link"
 						href="https://github.com/bchetanrao/Software-Eng.-project"
 						target="_blank"
 						rel="noopener noreferrer"
@@ -226,24 +236,28 @@
 			<div class="footer">
 				<div class="icons">
 					<a
+						class="link"
 						href="https://www.instagram.com/chetanrao_7"
 						target="_blank"
 						rel="noopener noreferrer"
 						><i class="fab fa-instagram"></i
 					></a>
 					<a
+						class="link"
 						href="https://www.facebook.com/people/Chetan-Rao/100006933079498/"
 						target="_blank"
 						rel="noopener noreferrer"
 						><i class="fab fa-facebook"></i
 					></a>
 					<a
+						class="link"
 						href="https://github.com/bchetanrao"
 						target="_blank"
 						rel="noopener noreferrer"
 						><i class="fab fa-github"></i
 					></a>
 					<a
+						class="link"
 						href="https://www.linkedin.com/in/bchetanrao/"
 						target="_blank"
 						rel="noopener noreferrer"
@@ -253,6 +267,7 @@
 				<h5>
 					Checkout my Wallpaper uploads on
 					<a
+						class="link"
 						href="https://www.zedge.net/profile/7b9de819-ee75-42a8-9fad-11db12efc0a6"
 						target="_blank"
 						rel="noopener noreferrer"
@@ -263,5 +278,38 @@
 			</div>
 			<span>© Copyright B Chetan Rao 2021</span>
 		</footer>
+
+		<script>
+			(function () {
+				const cursor = document.querySelector(".cursor");
+				const circle = document.querySelector(".circle");
+				const links = document.querySelectorAll(".link");
+				const editPosCursor = (e) => {
+					const { clientX: x, clientY: y } = e;
+					cursor.style.left = x + "px";
+					cursor.style.top = y + "px";
+					circle.style.left = x + "px";
+					circle.style.top = y + "px";
+				};
+				const animateit = function (e) {
+					const span = this.querySelector("span");
+					const { offsetX: x, offsetY: y } = e,
+						{ offsetWidth: width, offsetHeight: height } = this,
+						move = 25,
+						xMove = (x / width) * (move * 2) - move,
+						yMove = (y / height) * (move * 2) - move;
+
+					span.style.transform = `translate(${xMove}px, ${yMove}px)`;
+					circle.classList.add("hover");
+					if (e.type === "mouseleave") {
+						circle.classList.remove("hover");
+						span.style.transform = "";
+					}
+				};
+				window.addEventListener("mousemove", editPosCursor);
+				links.forEach((link) => link.addEventListener("mousemove", animateit));
+				links.forEach((link) => link.addEventListener("mouseleave", animateit));
+			})();
+		</script>
 	</body>
 </html>

@@ -209,6 +209,10 @@ h5 {
   padding-bottom: 0.5rem;
 }
 
+.achievements span a {
+  color: #4895ef;
+}
+
 .note {
   display: none;
 }

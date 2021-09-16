@@ -170,6 +170,11 @@ h5 {
 	.cluster {
 		padding-bottom: 0.5rem;
 	}
+	span {
+		a {
+			color: $link-color;
+		}
+	}
 }
 .note {
 	display: none;

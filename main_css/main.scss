@@ -9,96 +9,12 @@ $regular: 400;
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0%;
-	cursor: none;
 }
 ::selection {
 	color: $highlight-color;
 	background-color: $dark-color;
 }
-.circle,
-.cursor {
-	position: fixed;
-	background: #34d4d4;
-	border-radius: 50%;
-	transform: translate(-50%, -50%);
-	pointer-events: none;
-}
 
-.cursor {
-	height: 10px;
-	width: 10px;
-	z-index: 10;
-	background-color: #011627;
-}
-
-.circle {
-	height: 50px;
-	width: 50px;
-	mix-blend-mode: add;
-	opacity: 0.4;
-	z-index: 10;
-	transition: left 0.25s ease-out, top 0.25s ease-out, transform 0.25s linear;
-}
-
-.circle.hover {
-	transform: translate(-50%, -50%) scale(2.5);
-	animation: liquid 2.5s linear infinite;
-}
-
-@keyframes liquid {
-	0%,
-	100% {
-		border-radius: 28% 72% 46% 54% / 22% 50% 50% 78%;
-	}
-
-	25% {
-		border-radius: 73% 27% 41% 59% / 49% 20% 80% 51%;
-	}
-
-	50% {
-		border-radius: 47% 53% 28% 72% / 49% 76% 24% 51%;
-	}
-
-	75% {
-		border-radius: 48% 52% 68% 32% / 78% 54% 46% 22%;
-	}
-}
-.jk {
-	background-color: #34d4d4;
-}
-.distort {
-	background-color: #3d2aa8;
-}
-.original {
-	background-color: #e35300;
-}
-.psy {
-	background-color: #cf00b4;
-}
-.singularity {
-	background-color: #bbbfbf;
-}
-.eunoia {
-	background-color: #a60039;
-}
-.breathe {
-	background-color: #bbbfbf;
-}
-.phil {
-	background-color: #009982;
-}
-.aniquo {
-	background-color: #fff;
-}
-.tnt {
-	background-color: #e1ddd5;
-}
-.gifyre {
-	background-color: #f7f7f7;
-}
-.swe {
-	background-color: #dd0034;
-}
 img {
 	display: block;
 }

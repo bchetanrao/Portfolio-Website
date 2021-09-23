@@ -466,11 +466,6 @@ footer span {
     margin: 0;
     padding: 0;
   }
-  .grid_container .img-wrapper .img_title,
-  .grid_container_projects .img-wrapper .img_title {
-    left: 5%;
-    bottom: 1%;
-  }
   .grid_container .img-wrapper .img_title h5,
   .grid_container_projects .img-wrapper .img_title h5 {
     font-size: 2rem;

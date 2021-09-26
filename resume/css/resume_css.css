@@ -54,7 +54,7 @@ h2 {
 h3 {
   font-size: 1rem;
   font-weight: 700;
-  color: #512d6d;
+  color: #011627;
   margin: 0;
 }
 
@@ -74,7 +74,7 @@ h5 {
   font-size: 1rem;
   margin: 1% 0;
   font-weight: 600;
-  color: #512d6d;
+  color: #011627;
 }
 
 .techstack {
@@ -91,7 +91,7 @@ h5 {
   width: -moz-fit-content;
   width: fit-content;
   min-width: 3%;
-  border: solid 1.6px #512d6d;
+  border: solid 1.6px #011627;
   border-radius: 10px;
   font-size: 0.7rem;
   font-weight: 900;
@@ -147,14 +147,14 @@ h5 {
   font-size: 1rem;
   margin-right: 2rem;
   font-weight: 600;
-  color: #512d6d;
+  color: #011627;
   letter-spacing: 0.1rem;
 }
 
 .contact a {
   text-decoration: none;
   font-weight: 600;
-  color: #512d6d;
+  color: #011627;
 }
 
 .contact a:hover {
@@ -166,7 +166,7 @@ h5 {
 }
 
 .contact i {
-  color: #512d6d;
+  color: #011627;
   margin: 1% 2% 1% 0;
 }
 

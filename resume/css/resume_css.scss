@@ -9,6 +9,10 @@ $link-color-dark: #3f37c9;
 html {
 	background-color: $base-color;
 }
+::selection {
+	color: $text-color;
+	background-color: $special-color;
+}
 body {
 	font-family: "Raleway", sans-serif;
 	margin: 3% 5%;

@@ -3,6 +3,16 @@ html {
   background-color: #ffffff;
 }
 
+::-moz-selection {
+  color: #011627;
+  background-color: #f8485e;
+}
+
+::selection {
+  color: #011627;
+  background-color: #f8485e;
+}
+
 body {
   font-family: "Raleway", sans-serif;
   margin: 3% 5%;

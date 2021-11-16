@@ -156,29 +156,29 @@ section {
   height: 100vh;
 }
 
-section:nth-of-type(2) {
+section:nth-of-type(3) {
   margin: 0;
   padding: 0 15%;
   color: #fdfffc;
   background-color: #011627;
 }
 
-section:nth-of-type(2) ::-moz-selection {
+section:nth-of-type(3) ::-moz-selection {
   color: #011627;
   background-color: #ff9f1c;
 }
 
-section:nth-of-type(2) ::selection {
+section:nth-of-type(3) ::selection {
   color: #011627;
   background-color: #ff9f1c;
 }
 
-section:nth-of-type(2) .cursor,
-section:nth-of-type(2) .circle {
+section:nth-of-type(3) .cursor,
+section:nth-of-type(3) .circle {
   background: #fff;
 }
 
-section:nth-of-type(3) {
+section:nth-of-type(4) {
   height: 100%;
   margin: 0;
   padding: 5rem 0;
@@ -208,6 +208,25 @@ section:nth-of-type(3) {
 .grid_container_projects img {
   width: 100%;
   height: auto;
+}
+
+#logo {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 15vh;
+}
+
+#logo svg {
+  fill: #011627;
+  width: 10vh;
+}
+
+#intro {
+  height: 85vh;
 }
 
 .img-wrapper {
@@ -425,7 +444,7 @@ footer span {
   section {
     margin: 5%;
   }
-  section:nth-of-type(2) {
+  section:nth-of-type(3) {
     margin: 0;
     padding: 0 5%;
   }
@@ -443,7 +462,7 @@ footer span {
     font-size: 0.7rem;
     letter-spacing: 0.5rem;
   }
-  section:nth-of-type(3) {
+  section:nth-of-type(4) {
     padding: 2rem 0;
   }
   .work h2,

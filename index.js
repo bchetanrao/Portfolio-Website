@@ -1,7 +1,7 @@
 var loader = document.getElementById("loader");
 
 window.addEventListener("load", () => {
-	setTimeout(hideLoader, 3000);
+	setTimeout(hideLoader, 4000);
 });
 function hideLoader() {
 	loader.style.opacity = 0;

@@ -23,12 +23,15 @@
   width: 100vw;
   background-color: #011627;
   z-index: 1000;
-  -webkit-transition: 0.3s ease-in;
-  transition: 0.3s ease-in;
 }
 
 .logo-anim #bm {
   height: 100vh;
+}
+
+#loader {
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
 }
 
 img {

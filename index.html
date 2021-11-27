@@ -30,9 +30,10 @@
 		/>
 	</head>
 	<body>
-		<!-- custom cursor -->
-		<div class="circle"></div>
-		<div class="cursor"></div>
+		<!-- logo animation loader -->
+		<div class="logo-anim" id="loader">
+			<div id="bm"></div>
+		</div>
 		<!-- blobs -->
 		<div class="blob1">
 			<svg
@@ -118,12 +119,13 @@
 				<div class="about">
 					<h2>About</h2>
 					<p>
-						I am B Chetan Rao (alias: Arkarios07), a student at IIIT Allahabad. I started coding in
-						December 2019. I am a developer and self-taught designer. I have a
-						passion for making modern looking designs and websites. I am
-						interested in web design, graphic design and frontend development
-						and am well versed with the professional tools used for these. I am
-						always interested in taking up a challenge, reach out to me at
+						I am B Chetan Rao (alias: Arkarios07), a student at IIIT Allahabad.
+						I started coding in December 2019. I am a developer and self-taught
+						designer. I have a passion for making modern looking designs and
+						websites. I am interested in web design, graphic design and frontend
+						development and am well versed with the professional tools used for
+						these. I am always interested in taking up a challenge, reach out to
+						me at
 						<a class="link" href="mailto:chetanraocr7@gmail.com">
 							chetanraocr7@gmail.com</a
 						>
@@ -378,38 +380,7 @@
 			</div>
 			<span>© Copyright B Chetan Rao 2021</span>
 		</footer>
-
-		<script>
-			(function () {
-				const cursor = document.querySelector(".cursor");
-				const circle = document.querySelector(".circle");
-				const links = document.querySelectorAll(".link");
-				const editPosCursor = (e) => {
-					const { clientX: x, clientY: y } = e;
-					cursor.style.left = x + "px";
-					cursor.style.top = y + "px";
-					circle.style.left = x + "px";
-					circle.style.top = y + "px";
-				};
-				const animateit = function (e) {
-					const span = this.querySelector("span");
-					const { offsetX: x, offsetY: y } = e,
-						{ offsetWidth: width, offsetHeight: height } = this,
-						move = 25,
-						xMove = (x / width) * (move * 2) - move,
-						yMove = (y / height) * (move * 2) - move;
-
-					span.style.transform = `translate(${xMove}px, ${yMove}px)`;
-					circle.classList.add("hover");
-					if (e.type === "mouseleave") {
-						circle.classList.remove("hover");
-						span.style.transform = "";
-					}
-				};
-				window.addEventListener("mousemove", editPosCursor);
-				links.forEach((link) => link.addEventListener("mousemove", animateit));
-				links.forEach((link) => link.addEventListener("mouseleave", animateit));
-			})();
-		</script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.8.1/lottie.min.js"></script>
+		<script src="./index.js"></script>
 	</body>
 </html>

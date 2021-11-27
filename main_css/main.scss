@@ -14,7 +14,18 @@ $regular: 400;
 	color: $highlight-color;
 	background-color: $dark-color;
 }
-
+.logo-anim {
+	display: block;
+	position: fixed;
+	height: 100vh;
+	width: 100vw;
+	background-color: $dark-color;
+	z-index: 1000;
+	transition: 0.3s ease-in;
+	#bm {
+		height: 100vh;
+	}
+}
 img {
 	display: block;
 }

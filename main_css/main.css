@@ -172,6 +172,7 @@ section {
       -ms-flex-align: center;
           align-items: center;
   height: 100vh;
+  overflow: hidden;
 }
 
 section:nth-of-type(3) {
@@ -465,6 +466,9 @@ footer span {
   section:nth-of-type(3) {
     margin: 0;
     padding: 0 5%;
+  }
+  #logo {
+    height: 10vh;
   }
   h1 {
     font-size: 3.3rem;

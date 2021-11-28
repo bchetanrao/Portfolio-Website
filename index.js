@@ -5,6 +5,7 @@ window.addEventListener("load", () => {
 });
 function hideLoader() {
 	loader.style.opacity = 0;
+	loader.style.display = none;
 }
 
 var animation = bodymovin.loadAnimation({

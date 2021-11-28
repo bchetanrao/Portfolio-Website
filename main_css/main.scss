@@ -363,7 +363,10 @@ footer {
 		padding: 0 5%;
 	}
 	#logo {
-		height: 10vh;
+		height: 6vh;
+		svg {
+			height: 6vh;
+		}
 	}
 	h1 {
 		font-size: 3.3rem;

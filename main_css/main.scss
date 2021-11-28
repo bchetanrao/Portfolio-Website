@@ -27,6 +27,7 @@ $regular: 400;
 }
 #loader {
 	transition: 1s ease;
+	pointer-events: none;
 }
 img {
 	display: block;

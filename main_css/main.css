@@ -193,11 +193,6 @@ section:nth-of-type(3) ::selection {
   background-color: #ff9f1c;
 }
 
-section:nth-of-type(3) .cursor,
-section:nth-of-type(3) .circle {
-  background: #fff;
-}
-
 section:nth-of-type(4) {
   height: 100%;
   margin: 0;

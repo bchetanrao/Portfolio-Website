@@ -1,11 +1,10 @@
 var loader = document.getElementById("loader");
 
 window.addEventListener("load", () => {
-	setTimeout(hideLoader, 3000);
+	setTimeout(hideLoader, 5000);
 });
 function hideLoader() {
 	loader.style.opacity = 0;
-	// loader.style.display = none;
 }
 
 var animation = bodymovin.loadAnimation({

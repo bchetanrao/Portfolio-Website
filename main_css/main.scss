@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
-$base-color: #fdfffc;
-$dark-color: #011627;
-$highlight-color: #ff9f1c;
+$base-color: #ffffff;
+$dark-color: #0f0f0f;
+$highlight-color: #ff004c;
 $black: 900;
 $bold: 700;
 $regular: 400;
@@ -45,9 +45,10 @@ body {
 }
 ::-webkit-scrollbar {
 	width: 0.5rem;
+	background-color: $highlight-color;
 }
 ::-webkit-scrollbar-thumb {
-	background-color: $highlight-color;
+	background-color: $dark-color;
 }
 .blob1,
 .blob2,
@@ -177,7 +178,7 @@ section:nth-of-type(4) {
 	margin-bottom: 10%;
 }
 #logo {
-	justify-content: start;
+	justify-content: flex-end;
 	align-items: center;
 	height: 15vh;
 	svg {

@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
-$base-color: #ffffff;
+$base-color: #fff;
 $dark-color: #0f0f0f;
 $highlight-color: #ff004c;
 $black: 900;
@@ -26,7 +26,7 @@ $regular: 400;
 	}
 }
 #loader {
-	transition: 0.5s ease-in;
+	transition: 1s ease-out;
 	pointer-events: none;
 }
 img {

@@ -30,8 +30,8 @@
 }
 
 #loader {
-  -webkit-transition: 0.5s ease-in;
-  transition: 0.5s ease-in;
+  -webkit-transition: 1s ease-out;
+  transition: 1s ease-out;
   pointer-events: none;
 }
 
@@ -46,7 +46,7 @@ html {
 }
 
 body {
-  background-color: #ffffff;
+  background-color: #fff;
   overflow-x: hidden;
   font-family: "Roboto", sans-serif;
   color: #0f0f0f;
@@ -180,7 +180,7 @@ section {
 section:nth-of-type(3) {
   margin: 0;
   padding: 0 15%;
-  color: #ffffff;
+  color: #fff;
   background-color: #0f0f0f;
 }
 
@@ -272,7 +272,7 @@ section:nth-of-type(4) {
 
 .img-wrapper .img_title h5 {
   font-size: 3rem;
-  color: #ffffff;
+  color: #fff;
 }
 
 .img-wrapper .overlay {
@@ -309,7 +309,7 @@ footer {
   bottom: 0;
   padding-top: 5rem;
   background-color: #0f0f0f;
-  color: #ffffff;
+  color: #fff;
 }
 
 footer ::-moz-selection {
@@ -353,7 +353,7 @@ footer a {
 }
 
 footer a i {
-  color: #ffffff;
+  color: #fff;
   font-size: 2.8rem;
 }
 

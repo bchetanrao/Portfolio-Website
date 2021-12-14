@@ -54,7 +54,6 @@ body {
 
 .content-wrapper {
   overflow-x: hidden;
-  position: relative;
 }
 
 ::-webkit-scrollbar {
@@ -180,6 +179,7 @@ section {
           align-items: center;
   height: 100vh;
   overflow: hidden;
+  position: relative;
 }
 
 section:nth-of-type(3) {

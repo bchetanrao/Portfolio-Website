@@ -45,7 +45,7 @@ body {
 }
 .content-wrapper {
 	overflow-x: hidden;
-	position: relative;
+	// position: relative;
 }
 ::-webkit-scrollbar {
 	width: 0.5rem;
@@ -146,6 +146,7 @@ section {
 	align-items: center;
 	height: 100vh;
 	overflow: hidden;
+	position: relative;
 }
 section:nth-of-type(3) {
 	margin: 0;

@@ -54,6 +54,7 @@ body {
 
 .content-wrapper {
   overflow-x: hidden;
+  position: relative;
 }
 
 ::-webkit-scrollbar {

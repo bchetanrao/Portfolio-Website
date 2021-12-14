@@ -43,6 +43,9 @@ body {
 	font-family: "Roboto", sans-serif;
 	color: $dark-color;
 }
+.content-wrapper {
+	overflow-x: hidden;
+}
 ::-webkit-scrollbar {
 	width: 0.5rem;
 	background-color: $highlight-color;

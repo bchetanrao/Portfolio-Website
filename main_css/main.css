@@ -565,6 +565,7 @@ footer span {
   .insta_container .img-wrapper {
     -webkit-columns: 1;
             columns: 1;
+    padding: 1rem 0;
   }
   footer {
     padding: 0;

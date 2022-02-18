@@ -213,6 +213,11 @@ section:nth-of-type(4) {
   margin: 0 15%;
 }
 
+.work h2 a,
+.work h6 a {
+  text-decoration: none;
+}
+
 .grid_container,
 .grid_container_projects {
   position: relative;
@@ -304,6 +309,47 @@ section:nth-of-type(4) {
 
 .img-wrapper:hover .overlay {
   opacity: 50%;
+}
+
+.insta_container {
+  background-color: #0f0f0f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.insta_container .img-wrapper {
+  position: relative;
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+  background-color: #0f0f0f;
+  padding: 2rem 3rem;
+  width: auto;
+}
+
+.insta_container .img-wrapper img {
+  height: 80vh;
+  width: auto;
+}
+
+.insta_container .img-wrapper .img_title h5 {
+  font-size: 2rem;
+}
+
+.insta_container .img-wrapper:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 footer {
@@ -515,6 +561,10 @@ footer span {
   .grid_container .img-wrapper .img_title h5,
   .grid_container_projects .img-wrapper .img_title h5 {
     font-size: 2rem;
+  }
+  .insta_container .img-wrapper {
+    -webkit-columns: 1;
+            columns: 1;
   }
   footer {
     padding: 0;

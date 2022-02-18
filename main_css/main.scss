@@ -167,6 +167,9 @@ section:nth-of-type(4) {
 	h2,
 	h6 {
 		margin: 0 15%;
+		a {
+			text-decoration: none;
+		}
 	}
 }
 .grid_container,
@@ -236,6 +239,38 @@ section:nth-of-type(4) {
 		}
 		.overlay {
 			opacity: 50%;
+		}
+	}
+}
+.insta_container {
+	background-color: $dark-color;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	.img-wrapper {
+		position: relative;
+		width: 100%;
+		height: auto;
+		object-fit: cover;
+		overflow: hidden;
+		background-color: $dark-color;
+		padding: 2rem 3rem;
+		width: auto;
+		img {
+			height: 80vh;
+			width: auto;
+		}
+		.img_title {
+			h5 {
+				font-size: 2rem;
+				// color: #0f0f0f;
+			}
+		}
+		&:hover {
+			img {
+				transform: scale(1.1);
+			}
 		}
 	}
 }
@@ -411,6 +446,11 @@ footer {
 					font-size: 2rem;
 				}
 			}
+		}
+	}
+	.insta_container {
+		.img-wrapper {
+			columns: 1;
 		}
 	}
 	footer {

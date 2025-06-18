@@ -83,7 +83,6 @@ h5 {
 .bubble {
   margin: 1% 2% 1% 0;
   padding: 1% 2%;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   min-width: 3%;
